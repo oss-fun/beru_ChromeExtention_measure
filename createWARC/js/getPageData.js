@@ -13,6 +13,7 @@ function getStyleURIs(URIs){
     return styleURIs;
 };
 function download_WARC(data){
+    let UTC = new Date();
     console.log(data);
     let now = new Date();
     let GMT = now.toGMTString();
@@ -22,7 +23,8 @@ function download_WARC(data){
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     document.body.appendChild(a);
-    a.download = `${document.URL}.warc`;
+    //${document.URL}${UTC.getFullYear()}${UTC.getMonth()+1}${UTC.getDate()}
+    a.download = `sample.warc`;
     a.href = url;
     a.click();
     a.remove();
@@ -33,8 +35,8 @@ function sendTextData(URIs, sendMessage){
     chrome.runtime.sendMessage(URIs, sendMessage);
 };
 
-let URIs = {pageURI: document.URL};
-URIs.imageURIs = getImageURIs(document.images);
-URIs.styleURIs = getStyleURIs(document.styleSheets);
-console.log(URIs);
-sendTextData(URIs, download_WARC);
+    let URIs = {pageURI: document.URL};
+    URIs.imageURIs = getImageURIs(document.images);
+    URIs.styleURIs = getStyleURIs(document.styleSheets);
+    console.log(URIs);
+    sendTextData(URIs, download_WARC);
