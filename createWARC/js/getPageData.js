@@ -24,7 +24,7 @@ function download_WARC(data){
     document.body.appendChild(a);
     a.download = `${document.URL}.warc`;
     a.href = url;
-    //a.click();
+    a.click();
     a.remove();
     URL.revokeObjectURL(url);
 }
