@@ -9,7 +9,8 @@ function createWARCHeader(type, UTC, length, ...args){
         wHeader += `Content-Type: application/warc-fields${CRLF}`
     };
     wHeader += `WARC-Date: ${ISO[0]}Z${CRLF}`;
-    wHeader += `WARC-Filename: ${args}${UTC.getFullYear()}${UTC.getMonth()+1}${UTC.getDate()}.warc${CRLF}`;
+    //${args}${UTC.getFullYear()}${UTC.getMonth()+1}${UTC.getDate()}
+    wHeader += `WARC-Filename: sample.warc${CRLF}`;
     wHeader += `WARC-Record-ID: <urn:uuid:${generateUUID()}>${CRLF}`;
     wHeader += `Content-Length: ${length-2}${CRLF}${CRLF}`;
     return wHeader;
@@ -97,6 +98,7 @@ async function createWarc(message){
         warc += createResponseBlobData(pageBlob, text);
     })
     
+    
     for(let i=0; i < message.imageURIs.length; i++){
         //nullCheck
         if(message.imageURIs[i]){
@@ -113,18 +115,14 @@ async function createWarc(message){
                 return blob.text();
             })
             .then(text =>{
+                warc += createWARCHeader('response', UTC, (new TextEncoder().encode(createResponse(imgBuff))).length + (new TextEncoder().encode(createResponseBlobData(imgBlob, text))).length, message.imageURIs[i]);
                 warc += createResponse(imgBuff);
-                blobToBase64(imgBlob)
-                .then(base64 =>{
-                    warc += createWARCHeader('response', UTC, (new TextEncoder().encode(createResponse(imgBuff))).length + (new TextEncoder().encode(createResponseBlobData(imgBlob, base64))).length, message.imageURIs[i]);
-                    warc += createResponseBlobData(imgBlob, base64);
-                    return warc;
-                })
+                warc += createResponseBlobData(imgBlob, text);
             })
         }
     }
 
-    for(let i=0; i<message.styleURIs.length; i++){
+for(let i=0; i<message.styleURIs.length; i++){
         //nullCheck
         if(message.styleURIs[i]){
             const css = new Request(message.styleURIs[i]);
