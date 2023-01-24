@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 
 #
 # 簡易タスクランナー(MacOS, zsh)
@@ -8,7 +8,7 @@
 # 定数
 #---------------------------
 # 対象のディレクトリ
-readonly TARGET_DIR=$(dirname $0)/warcstore
+readonly TARGET_DIR=~/Downlocad
 
 #---------------------------
 # タスクランナー
@@ -24,34 +24,11 @@ fi
 # -d ''でスペースがくると入力終了
 # eventにスペースまでの文字列が入る
 
-ipfs daemon & fswatch -0 $TARGET_DIR | while read -d '' event; do
+echo $TARGET_DIR
 
-  # ファイル名がmanabaならindexedmanaba.cdxjへ追記 
-  if [[ "$event" == |manaba| ]];then
-    echo "manaba"
-    ipwb index $event >> indexedmanaba.cdxj
-    rm ${event}
-  fi
-
-  # ファイル名がstudentならindexdestudent.cdxjへ追記 
-  if [[ "$event" == |student| ]];then
-    echo "student"
-    ipwb index $event >> indexedstudent.cdxj
-    rm ${event}
-  fi
-
-  # ファイル名がhopeならindexedhope.cdxjへ追記 
-  if [[ "$event" == |hope| ]];then
-    echo "hope"
-    ipwb index $event >> indexedhope.cdxj
-    rm ${event}
-  fi
-
-  # ファイル名がfunならindexedfun.cdxjへ追記
-  if [[ "$event" == |fun| ]];then
-	echo "fun"
-	ipwb index $event >> indexedfun.cdxj
-	rm ${event}
-  fi
+fswatch -0 $TARGET_DIR | while read -d '' event; do
+  
+  echo $event
+  docker container run -it --rm -v $(pwd)/ipwb_data:/data -p 2016:2016 oduwsdl/ipwb sh -c "ipwb index {warcfile} > /data/test.cdxj"
 
 done
