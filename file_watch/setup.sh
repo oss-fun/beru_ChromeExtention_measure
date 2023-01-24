@@ -14,7 +14,7 @@ generate_config() {
 	TARGET_DIR=''
 	if [ -d "$HOME/Downloads" ]; then
 		TARGET_DIR="$HOME/Downloads"
-		echo log: watch dir -> ${TARGET_DIR} 
+		echo "log: watch dir -> ${TARGET_DIR}" 
 	else
 		TARGET_DIR=$(pwd)/target
 		echo log: ダウンロードフォルダーが見つかりません。手動でwarcfileをtargetフォルダーに移してください。
@@ -46,8 +46,8 @@ if [ -z "${OS}" ];then
 	echo error: OS
 	exit 1
 elif [ "${OS}" = 'Linux' ]; then
-	apt update
-	apt install inotify-tools
+	sudo apt -qq update
+	sudo apt -qq install inotify-tools
 	./linuxTask.sh &
 elif [ "$OS" = 'Mac' ]; then
 	brew install fswatch
