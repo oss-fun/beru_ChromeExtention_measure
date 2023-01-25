@@ -48,10 +48,10 @@ if [ -z "${OS}" ];then
 elif [ "${OS}" = 'Linux' ]; then
 	sudo apt -qq update
 	sudo apt -qq install inotify-tools
-	./linuxTask.sh &
+	./linuxTask.sh&
 elif [ "$OS" = 'Mac' ]; then
 	brew install fswatch
-	./macTask.sh &
+	./macTask.sh&
 fi
 
 docker run -d --name ipfs \
@@ -61,4 +61,5 @@ docker run -d --name ipfs \
 	-v $(pwd)/ipfs_config/swarm.key:/etc/swarm.key \
 	-v $(pwd)/ipfs_config/001-bootstrap.sh:/container-init.d/001-bootstrap.sh \
 	-p 4001:4001   -p 127.0.0.1:8080:8080   -p 127.0.0.1:5001:5001 \
-	ipfs/kubo
+	ipfs/kubo | read DOCKER_ID;
+	

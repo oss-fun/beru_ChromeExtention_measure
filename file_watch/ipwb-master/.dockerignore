@@ -1,0 +1,11 @@
+.git
+.gitignore
+.gitattributes
+.coveragerc
+.travis.yml
+LICENSE
+Dockerfile
+docs
+dist
+build
+ipwb.egg-info

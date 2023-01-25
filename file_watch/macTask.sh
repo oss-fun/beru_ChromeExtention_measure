@@ -9,12 +9,14 @@ if [[ ! -d $WATCH_TARGET_DIR ]]; then
 fi
 
 echo watch start
-fswatch -0 $WATCH_TARGET_DIR | while read -d '' event; do
-  
-  if [[ $event =~ warc$ ]];
+fswatch -0 --event Created $WATCH_TARGET_DIR | while read -d '' event; do
+
+  echo $event
+  if [[ $event =~ .warc$ ]];
   then
-    echo $event
+    filename=${event##*/}
     mv $event $(pwd)/ipwb_data
-    docker container run -it --rm -v $(pwd)/ipwb_data:/data -p 2016:2016 oduwsdl/ipwb sh -c "ipwb index > /data/test.cdxj"
+    echo "WARC FILE COPY"
+    docker run -it --rm -v $(pwd)/ipwb_data:/data -p 2016:2016 oduwsdl/ipwb sh -c ipwb index $(pwd)/ipwb_data/${filename} >> cdxj_data/HopeArchive.cdxj
   fi
 done
