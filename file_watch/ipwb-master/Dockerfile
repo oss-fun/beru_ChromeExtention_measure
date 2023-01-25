@@ -17,7 +17,9 @@ RUN        chmod a+x /usr/local/bin/entrypoint.sh
 ENV        PYTHONUNBUFFERED=1
 
 # Create folders for WARC, CDXJ and IPFS stores
-RUN        mkdir -p /data/{warc,cdxj,ipfs}
+RUN        mkdir -p /data/ipfs \
+        && mkdir -p /data/warc \
+        && mkdir -p /data/cdxj \
 
 # Download and install IPFS
 ENV        IPFS_PATH=/data/ipfs
@@ -31,7 +33,7 @@ RUN        cd /tmp \
             && ipfs bootstrap rm --all \
             && ipfs bootstrap add /ip4/153.120.91.229/tcp/4001/p2p/12D3KooWRdUnAXeCoW9FUnchhQsiNfvffwMYqS2nGdraUfvuqzoy
             
-COPY        swarm.key ${IPFS_PATH}/swarm.key
+COPY        swarm.key /root/.ipfs/
 
 
 # Make necessary changes to prepare the environment for IPWB

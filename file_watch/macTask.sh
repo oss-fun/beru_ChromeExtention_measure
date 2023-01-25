@@ -10,13 +10,12 @@ fi
 
 echo watch start
 fswatch -0 --event Created $WATCH_TARGET_DIR | while read -d '' event; do
-
   echo $event
   if [[ $event =~ .warc$ ]];
   then
     filename=${event##*/}
-    mv $event $(pwd)/ipwb_data
+    mv $event $(pwd)/ipwb-master/warc
     echo "WARC FILE COPY"
-    docker run -it --rm -v $(pwd)/ipwb_data:/data -p 2016:2016 oduwsdl/ipwb sh -c ipwb index $(pwd)/ipwb_data/${filename} >> cdxj_data/HopeArchive.cdxj
+    docker exec -it ipwb_local ipwb index /data/warc/$filename >> /data/cdxj/hope.cdxj
   fi
 done

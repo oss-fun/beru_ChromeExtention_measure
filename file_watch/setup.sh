@@ -8,8 +8,9 @@ if [ ! -f ./config ]; then
 	touch config
 fi
 
+#
 generate_config() {
-	echo IPWB_DATA_DIR=$(pwd)/ipfs_data > ./config
+	echo IPWB_DATA_DIR=$(pwd)/ipwb-master/warc > ./config
 	
 	TARGET_DIR=''
 	if [ -d "$HOME/Downloads" ]; then
@@ -32,7 +33,7 @@ system_check(){
 	elif [ "$(expr substr $(uname -s) 1 5)" = 'Linux' ]; then
 		OS='Linux'
 	fi
-
+	echo OS="${OS}" >> ./config 
 	DOCKER_PATH=$(which docker)
 	if [ -z "${DOCKER_PATH}" ]; then
 		echo error: docker is not installed
@@ -54,12 +55,9 @@ elif [ "$OS" = 'Mac' ]; then
 	./macTask.sh&
 fi
 
-docker run -d --name ipfs \
-	-e PRIVATE_PEER_ID="12D3KooWRdUnAXeCoW9FUnchhQsiNfvffwMYqS2nGdraUfvuqzoy" \
-	-e PRIVATE_PEER_IP_ADDR="153.120.91.229"  \
-	-e IPFS_SWARM_KEY_FILE=/etc/swarm.key \
-	-v $(pwd)/ipfs_config/swarm.key:/etc/swarm.key \
-	-v $(pwd)/ipfs_config/001-bootstrap.sh:/container-init.d/001-bootstrap.sh \
+docker build ./ipwb-master -t ipwb_local
+
+docker run -d --name ipwb_local \
+	-v $(pwd)/ipwb-master/warc:/data/warc	-v $(pwd)/ipwb-master/cdxj:/data/cdxj \
 	-p 4001:4001   -p 127.0.0.1:8080:8080   -p 127.0.0.1:5001:5001 \
-	ipfs/kubo | read DOCKER_ID;
-	
+	ipwb_local

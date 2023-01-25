@@ -2,23 +2,24 @@
 
 source ./config
 
-
-TARGET_DIR=$(cd $(dirname $0) && pwd)
+# ディレクトリの存在チェック
+if [[ ! -d $WATCH_TARGET_DIR ]]; then
+    echo "[error] Not Found target directory ${WATCH_TARGET_DIR}" 
+    exit
+fi
 
 echo watch start
-inotifywait -m $WATCH_TARGET_DIR -mq $dir_name -e create | while read line; do
+inotifywait -m $WATCH_TARGET_DIR -mq $dir_name -e create | while read event; do
 
-    ARR=(${line})
+    ARR=(${event})
     targetFile=${ARR[2]} 
 
     if [[ ${targetFile} =~ .warc$ ]];
     then
-        echo "${targetFile} ipwb index"
-        docker run -it --rm \
-					-v $(pwd)/ipwb_data:/data \
-					-p 2016:2016 oduwsdl/ipwb \
-					sh -c "ipwb index > /data/test.cdxj"
+        filename=${event##*/}
+        mv $event $(pwd)/ipwb-master/warc
+        echo "WARC FILE COPY"
+        docker exec -it ipwb_local ipwb index /data/warc/$filename
         rm ${ARR[2]}
     fi
-
 done 
