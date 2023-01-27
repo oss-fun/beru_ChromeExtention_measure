@@ -17,7 +17,8 @@ inotifywait -m $WATCH_TARGET_DIR -mq $dir_name -e create | while read event; do
     if [[ ${targetFile} =~ .warc$ ]];
     then
         filename=${event##*/}
-        mv $event $(pwd)/ipwb-master/warc
+        cp $event $(pwd)/ipwb-master/warc
+        rm $event
         echo "WARC FILE COPY"
         docker exec -it ipwb_local ipwb index /data/warc/$filename
         rm ${ARR[2]}
