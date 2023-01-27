@@ -1,57 +1,23 @@
-#!/usr/bin/zsh
+#!/bin/bash
+source ./config
 
-#
-# 簡易タスクランナー(MacOS, zsh)
-#
-
-#---------------------------
-# 定数
-#---------------------------
-# 対象のディレクトリ
-readonly TARGET_DIR=$(dirname $0)/warcstore
-
-#---------------------------
-# タスクランナー
 #---------------------------
 # ディレクトリの存在チェック
-if [[ ! -d $TARGET_DIR ]]; then
-  echo "[error] Not Found target directory ${TARGET_DIR}" 
+if [[ ! -d $WATCH_TARGET_DIR ]]; then
+  echo "[error] Not Found target directory ${WATCH_TARGET_DIR}" 
   exit
 fi
 
+echo watch start
 
-# ディレクトリを監視
-# -d ''でスペースがくると入力終了
-# eventにスペースまでの文字列が入る
-
-ipfs daemon & fswatch -0 $TARGET_DIR | while read -d '' event; do
-
-  # ファイル名がmanabaならindexedmanaba.cdxjへ追記 
-  if [[ "$event" == |manaba| ]];then
-    echo "manaba"
-    ipwb index $event >> indexedmanaba.cdxj
-    rm ${event}
+fswatch -0 --event Created $WATCH_TARGET_DIR | while read -d '' event; do
+  echo $event
+  if [[ $event =~ .warc$ ]];
+  then
+    filename=${event##*/}
+    cp $event $(pwd)/ipwb-master/warc
+    rm $event
+    echo "WARC FILE COPY"
+    docker exec -i ipwb_local ipwb index /data/warc/$filename >> ipwb-master/cdxj/hope.cdxj
   fi
-
-  # ファイル名がstudentならindexdestudent.cdxjへ追記 
-  if [[ "$event" == |student| ]];then
-    echo "student"
-    ipwb index $event >> indexedstudent.cdxj
-    rm ${event}
-  fi
-
-  # ファイル名がhopeならindexedhope.cdxjへ追記 
-  if [[ "$event" == |hope| ]];then
-    echo "hope"
-    ipwb index $event >> indexedhope.cdxj
-    rm ${event}
-  fi
-
-  # ファイル名がfunならindexedfun.cdxjへ追記
-  if [[ "$event" == |fun| ]];then
-	echo "fun"
-	ipwb index $event >> indexedfun.cdxj
-	rm ${event}
-  fi
-
 done
