@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "sudoはパッケージインストールのapt, brewコマンドに利用します"
 
 OS=''
