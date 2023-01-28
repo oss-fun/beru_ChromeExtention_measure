@@ -15,7 +15,6 @@ function getStyleURIs(URIs){
 function download_WARC(data){
     console.log(data);
     let now = new Date();
-    let GMT = now.toGMTString();
 
     const blob = new Blob([data], {type: 'text/plain'});
 
@@ -34,7 +33,7 @@ function sendTextData(URIs, sendMessage){
     chrome.runtime.sendMessage(URIs, sendMessage);
 };
 
-//if(document.domain == "hope.fun.ac.jp"){
+if(document.domain == "hope.fun.ac.jp"){
     window.addEventListener('load', (event) => {
         let URIs = {pageURI: document.URL};
         URIs.imageURIs = getImageURIs(document.images);
@@ -42,4 +41,4 @@ function sendTextData(URIs, sendMessage){
         console.log(URIs);
         sendTextData(URIs, download_WARC);
     });
-//};
+};

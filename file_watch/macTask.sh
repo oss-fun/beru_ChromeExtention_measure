@@ -1,6 +1,8 @@
 #!/bin/bash
 source ./config
 
+docker start ipwb_local
+
 #---------------------------
 # ディレクトリの存在チェック
 if [[ ! -d $WATCH_TARGET_DIR ]]; then
@@ -9,7 +11,6 @@ if [[ ! -d $WATCH_TARGET_DIR ]]; then
 fi
 
 echo watch start
-
 fswatch -0 --event Created $WATCH_TARGET_DIR | while read -d '' event; do
   echo $event
   if [[ $event =~ .warc$ ]];

@@ -7,10 +7,8 @@ function createWARCHeader(type, UTC, length, ...args){
         wHeader += `WARC-Target-URI: ${args}${CRLF}`
     }else{
         wHeader += `Content-Type: application/warc-fields${CRLF}`
-        wHeader += `WARC-Filename: sample.warc${CRLF}`;
     };
     wHeader += `WARC-Date: ${ISO[0]}Z${CRLF}`;
-    //${args}${UTC.getFullYear()}${UTC.getMonth()+1}${UTC.getDate()}
     wHeader += `WARC-Record-ID: <urn:uuid:${generateUUID()}>${CRLF}`;
     wHeader += `Content-Length: ${length-2}${CRLF}${CRLF}`;
     return wHeader;

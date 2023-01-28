@@ -20,7 +20,7 @@ inotifywait -m $WATCH_TARGET_DIR -mq $dir_name -e create | while read event; do
         cp $event $(pwd)/ipwb-master/warc
         rm $event
         echo "WARC FILE COPY"
-        docker exec -it ipwb_local ipwb index /data/warc/$filename
+        docker exec -it ipwb_local ipwb index /data/warc/$filename >> ipwb_master/cdxj
         rm ${ARR[2]}
     fi
 done 
