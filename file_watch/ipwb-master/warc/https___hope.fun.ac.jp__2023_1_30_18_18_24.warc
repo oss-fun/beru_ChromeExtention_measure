@@ -1,42 +1,42 @@
 WARC/1.0
 WARC-Type: warcinfo
 Content-Type: application/warc-fields
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:4dc7e31b-73f3-46e0-9326-1a9b7537aeec>
-Content-Length: 279
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:5d969ef8-df8a-4ced-8342-15332b0ac102>
+Content-Length: 263
 
 software: getPageData
 format: WARC File Format 1.0
 conformsTo: http://bibnum.bnf.fr/WARC/WARC_ISO_28500_version1_latestdraft.pdf
-http-header-user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+http-header-user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 
 
 
 WARC/1.0
 WARC-Type: request
-WARC-Target-URI: https://hope.fun.ac.jp/?redirect=0
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:91f22034-a1dd-4759-9960-ad4716766c23>
-Content-Length: 253
+WARC-Target-URI: https://hope.fun.ac.jp/
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:bec15dc9-e287-4f26-bd85-67c915a85d03>
+Content-Length: 226
 
 Content-Type: application/http;msgtype=request
-GET https://hope.fun.ac.jp/?redirect=0 HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+GET https://hope.fun.ac.jp/ HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
 
 WARC/1.0
 WARC-Type: response
-WARC-Target-URI: https://hope.fun.ac.jp/?redirect=0
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:9e19d681-3e74-43c1-b65a-2f9651566c04>
-Content-Length: 38059
+WARC-Target-URI: https://hope.fun.ac.jp/
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:629bf633-4a61-465c-8eaa-6200f5a6321a>
+Content-Length: 37999
 
 HTTP/1.1 200 basic
 Content-Type: application/http;msgtype=request
 Content-Type: text/html
-Content-Length: 37275
+Content-Length: 37215
 
 <!DOCTYPE html>
 
@@ -51,7 +51,7 @@ Content-Length: 37275
 //<![CDATA[
 var M = {}; M.yui = {};
 M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"nHOwCpaDVP","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":2,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"qalXnqFfYI","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":2,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
 var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
 if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
 YUI_config = {"debug":false,"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?m\/1648826156\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"m\/1648826156\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_poodll-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1648826156\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
@@ -97,28 +97,28 @@ document.body.className += ' jsenabled';
             <ul class="navbar-nav d-none d-md-flex">
                 <!-- custom_menu -->
                 <li class="dropdown nav-item">
-    <a class="dropdown-toggle nav-link" id="drop-down-63d76f785379a63d76f7852c9a4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d76f785379a63d76f7852c9a4">
+    <a class="dropdown-toggle nav-link" id="drop-down-63d78b60104a863d78b600f7c54" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d78b60104a863d78b600f7c54">
         日本語 ‎(ja)‎
     </a>
-    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d76f785379a63d76f7852c9a4" aria-labelledby="drop-down-63d76f785379a63d76f7852c9a4">
-                <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?redirect=0&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
-                <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?redirect=0&amp;lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d78b60104a863d78b600f7c54" aria-labelledby="drop-down-63d78b60104a863d78b600f7c54">
+                <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a>
     </div>
 </li>
                 <!-- page_heading_menu -->
                 
             </ul>
             <div class="ml-auto">
-                <div id="searchinput-navbar-63d76f785382563d76f7852c9a5" class="simplesearchform">
+                <div id="searchinput-navbar-63d78b601051f63d78b600f7c55" class="simplesearchform">
     <div class="collapse" id="searchform-navbar">
         <form autocomplete="off" action="https://hope.fun.ac.jp/search/index.php" method="get" accept-charset="utf-8" class="mform form-inline searchform-navbar">
                 <input type="hidden" name="context" value="2">
             <div class="input-group">
-                <label for="searchinput-63d76f785382563d76f7852c9a5">
+                <label for="searchinput-63d78b601051f63d78b600f7c55">
                     <span class="sr-only">検索</span>
                 </label>
                     <input type="text"
-                       id="searchinput-63d76f785382563d76f7852c9a5"
+                       id="searchinput-63d78b601051f63d78b600f7c55"
                        class="form-control withclear"
                        placeholder="検索"
                        aria-label="検索"
@@ -225,11 +225,11 @@ document.body.className += ' jsenabled';
     <form autocomplete="off" action="https://hope.fun.ac.jp/search/index.php" method="get" accept-charset="utf-8" class="mform form-inline simplesearchform">
         <input type="hidden" name="areaids" value="core_course-course">
     <div class="input-group">
-        <label for="searchinput-63d76f7854dd063d76f7852c9a8">
+        <label for="searchinput-63d78b6011c4f63d78b600f7c58">
             <span class="sr-only">コースを検索する</span>
         </label>
         <input type="text"
-           id="searchinput-63d76f7854dd063d76f7852c9a8"
+           id="searchinput-63d78b6011c4f63d78b600f7c58"
            class="form-control"
            placeholder="コースを検索する"
            aria-label="コースを検索する"
@@ -304,8 +304,8 @@ document.body.className += ' jsenabled';
                                         <li><a href="#" title="言語設定">日本語 ‎(ja)‎</a></li>
                                     <li>
                                         <ul class="list-unstyled ml-3">
-                                                            <li><a href="https://hope.fun.ac.jp/?redirect=0&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
-                                                            <li><a href="https://hope.fun.ac.jp/?redirect=0&amp;lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a></li>
+                                                            <li><a href="https://hope.fun.ac.jp/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
+                                                            <li><a href="https://hope.fun.ac.jp/?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a></li>
                                         </ul>
                                     </li>
                     </ul>
@@ -383,11 +383,11 @@ require(['jquery'], function($) {
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f7852c9a3', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f7852c9a3').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b600f7c53', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b600f7c53').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f7852c9a2').submit();
+            $('#single_select_f63d78b600f7c52').submit();
         }
     });
 });
@@ -400,7 +400,7 @@ require(
 function(
     $
 ) {
-    var uniqid = "63d76f785382563d76f7852c9a5";
+    var uniqid = "63d78b601051f63d78b600f7c55";
     var container = $('#searchinput-navbar-' + uniqid);
     var opensearch = container.find('[data-action="opensearch"]');
     var input = container.find('[data-region="input"]');
@@ -425,11 +425,11 @@ function(
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f7852c9a7', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f7852c9a7').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b600f7c57', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b600f7c57').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f7852c9a6').submit();
+            $('#single_select_f63d78b600f7c56').submit();
         }
     });
 });
@@ -467,7 +467,7 @@ Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_fil
 M.util.help_popups.setup(Y);
 Y.use("moodle-course-categoryexpander",function() {Y.Moodle.course.categoryexpander.init();
 });
- M.util.js_pending('random63d76f7852c9a9'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d76f7852c9a9'); });
+ M.util.js_pending('random63d78b600f7c59'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d78b600f7c59'); });
 })();
 //]]>
 </script>
@@ -483,13 +483,13 @@ Y.use("moodle-course-categoryexpander",function() {Y.Moodle.course.categoryexpan
 WARC/1.0
 WARC-Type: request
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:86372f87-52a6-4607-aa89-e284a1f962e7>
-Content-Length: 656
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:45db9f0c-3ab6-4480-8771-b5fb1daac295>
+Content-Length: 640
 
 Content-Type: application/http;msgtype=request
 GET https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
@@ -497,8 +497,8 @@ Connection: close
 WARC/1.0
 WARC-Type: response
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:64c4ac5d-67cb-4517-aa9c-a1355afd3998>
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:e18db649-cf96-4d20-8c0e-ae1b71a1a180>
 Content-Length: 34212
 
 HTTP/1.1 404 basic
@@ -519,7 +519,7 @@ Content-Length: 33584
 //<![CDATA[
 var M = {}; M.yui = {};
 M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"nHOwCpaDVP","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"qalXnqFfYI","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
 var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
 if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
 YUI_config = {"debug":false,"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?m\/1648826156\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"m\/1648826156\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_poodll-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1648826156\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
@@ -565,10 +565,10 @@ document.body.className += ' jsenabled';
             <ul class="navbar-nav d-none d-md-flex">
                 <!-- custom_menu -->
                 <li class="dropdown nav-item">
-    <a class="dropdown-toggle nav-link" id="drop-down-63d76f7866d2e63d76f78663e74" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d76f7866d2e63d76f78663e74">
+    <a class="dropdown-toggle nav-link" id="drop-down-63d78b602d7c263d78b602cc774" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d78b602d7c263d78b602cc774">
         日本語 ‎(ja)‎
     </a>
-    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d76f7866d2e63d76f78663e74" aria-labelledby="drop-down-63d76f7866d2e63d76f78663e74">
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d78b602d7c263d78b602cc774" aria-labelledby="drop-down-63d78b602d7c263d78b602cc774">
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a>
     </div>
@@ -577,16 +577,16 @@ document.body.className += ' jsenabled';
                 
             </ul>
             <div class="ml-auto">
-                <div id="searchinput-navbar-63d76f7866d9c63d76f78663e75" class="simplesearchform">
+                <div id="searchinput-navbar-63d78b602d83263d78b602cc775" class="simplesearchform">
     <div class="collapse" id="searchform-navbar">
         <form autocomplete="off" action="https://hope.fun.ac.jp/search/index.php" method="get" accept-charset="utf-8" class="mform form-inline searchform-navbar">
                 <input type="hidden" name="context" value="1">
             <div class="input-group">
-                <label for="searchinput-63d76f7866d9c63d76f78663e75">
+                <label for="searchinput-63d78b602d83263d78b602cc775">
                     <span class="sr-only">検索</span>
                 </label>
                     <input type="text"
-                       id="searchinput-63d76f7866d9c63d76f78663e75"
+                       id="searchinput-63d78b602d83263d78b602cc775"
                        class="form-control withclear"
                        placeholder="検索"
                        aria-label="検索"
@@ -702,7 +702,7 @@ document.body.className += ' jsenabled';
     <form method="get" action="https://hope.fun.ac.jp/course/view.php" >
             <input type="hidden" name="id" value="1">
         <button type="submit" class="btn btn-primary"
-            id="single_button63d76f78663e78"
+            id="single_button63d78b602cc778"
             title=""
             
             >続ける</button>
@@ -813,11 +813,11 @@ require(['jquery'], function($) {
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f78663e73', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f78663e73').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b602cc773', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b602cc773').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f78663e72').submit();
+            $('#single_select_f63d78b602cc772').submit();
         }
     });
 });
@@ -830,7 +830,7 @@ require(
 function(
     $
 ) {
-    var uniqid = "63d76f7866d9c63d76f78663e75";
+    var uniqid = "63d78b602d83263d78b602cc775";
     var container = $('#searchinput-navbar-' + uniqid);
     var opensearch = container.find('[data-action="opensearch"]');
     var input = container.find('[data-region="input"]');
@@ -855,11 +855,11 @@ function(
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f78663e77', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f78663e77').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b602cc777', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b602cc777').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f78663e76').submit();
+            $('#single_select_f63d78b602cc776').submit();
         }
     });
 });
@@ -895,7 +895,7 @@ M.str = {"moodle":{"lastmodified":"\u6700\u7d42\u66f4\u65b0\u65e5\u6642","name":
 Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
 });
 M.util.help_popups.setup(Y);
- M.util.js_pending('random63d76f78663e79'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d76f78663e79'); });
+ M.util.js_pending('random63d78b602cc779'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d78b602cc779'); });
 })();
 //]]>
 </script>
@@ -911,13 +911,13 @@ M.util.help_popups.setup(Y);
 WARC/1.0
 WARC-Type: request
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:ddb13bc6-2b2c-4d3e-93ee-ff880237e96e>
-Content-Length: 656
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:d97d6a7d-6fdd-485a-8b70-6146db862024>
+Content-Length: 640
 
 Content-Type: application/http;msgtype=request
 GET https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
@@ -925,8 +925,8 @@ Connection: close
 WARC/1.0
 WARC-Type: response
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:2575c109-3c79-4231-a229-f15a3557ffe2>
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:96f90249-31b0-428b-9ad9-d97802ecdd0c>
 Content-Length: 34212
 
 HTTP/1.1 404 basic
@@ -947,7 +947,7 @@ Content-Length: 33584
 //<![CDATA[
 var M = {}; M.yui = {};
 M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"nHOwCpaDVP","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"qalXnqFfYI","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
 var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
 if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
 YUI_config = {"debug":false,"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?m\/1648826156\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"m\/1648826156\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_poodll-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1648826156\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
@@ -993,10 +993,10 @@ document.body.className += ' jsenabled';
             <ul class="navbar-nav d-none d-md-flex">
                 <!-- custom_menu -->
                 <li class="dropdown nav-item">
-    <a class="dropdown-toggle nav-link" id="drop-down-63d76f787378c63d76f7872e3c4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d76f787378c63d76f7872e3c4">
+    <a class="dropdown-toggle nav-link" id="drop-down-63d78b603dd4663d78b603d1fd4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d78b603dd4663d78b603d1fd4">
         日本語 ‎(ja)‎
     </a>
-    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d76f787378c63d76f7872e3c4" aria-labelledby="drop-down-63d76f787378c63d76f7872e3c4">
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d78b603dd4663d78b603d1fd4" aria-labelledby="drop-down-63d78b603dd4663d78b603d1fd4">
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a>
     </div>
@@ -1005,16 +1005,16 @@ document.body.className += ' jsenabled';
                 
             </ul>
             <div class="ml-auto">
-                <div id="searchinput-navbar-63d76f787380963d76f7872e3c5" class="simplesearchform">
+                <div id="searchinput-navbar-63d78b603ddb863d78b603d1fd5" class="simplesearchform">
     <div class="collapse" id="searchform-navbar">
         <form autocomplete="off" action="https://hope.fun.ac.jp/search/index.php" method="get" accept-charset="utf-8" class="mform form-inline searchform-navbar">
                 <input type="hidden" name="context" value="1">
             <div class="input-group">
-                <label for="searchinput-63d76f787380963d76f7872e3c5">
+                <label for="searchinput-63d78b603ddb863d78b603d1fd5">
                     <span class="sr-only">検索</span>
                 </label>
                     <input type="text"
-                       id="searchinput-63d76f787380963d76f7872e3c5"
+                       id="searchinput-63d78b603ddb863d78b603d1fd5"
                        class="form-control withclear"
                        placeholder="検索"
                        aria-label="検索"
@@ -1130,7 +1130,7 @@ document.body.className += ' jsenabled';
     <form method="get" action="https://hope.fun.ac.jp/course/view.php" >
             <input type="hidden" name="id" value="1">
         <button type="submit" class="btn btn-primary"
-            id="single_button63d76f7872e3c8"
+            id="single_button63d78b603d1fd8"
             title=""
             
             >続ける</button>
@@ -1241,11 +1241,11 @@ require(['jquery'], function($) {
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f7872e3c3', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f7872e3c3').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b603d1fd3', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b603d1fd3').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f7872e3c2').submit();
+            $('#single_select_f63d78b603d1fd2').submit();
         }
     });
 });
@@ -1258,7 +1258,7 @@ require(
 function(
     $
 ) {
-    var uniqid = "63d76f787380963d76f7872e3c5";
+    var uniqid = "63d78b603ddb863d78b603d1fd5";
     var container = $('#searchinput-navbar-' + uniqid);
     var opensearch = container.find('[data-action="opensearch"]');
     var input = container.find('[data-region="input"]');
@@ -1283,11 +1283,11 @@ function(
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f7872e3c7', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f7872e3c7').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b603d1fd7', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b603d1fd7').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f7872e3c6').submit();
+            $('#single_select_f63d78b603d1fd6').submit();
         }
     });
 });
@@ -1323,7 +1323,7 @@ M.str = {"moodle":{"lastmodified":"\u6700\u7d42\u66f4\u65b0\u65e5\u6642","name":
 Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
 });
 M.util.help_popups.setup(Y);
- M.util.js_pending('random63d76f7872e3c9'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d76f7872e3c9'); });
+ M.util.js_pending('random63d78b603d1fd9'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d78b603d1fd9'); });
 })();
 //]]>
 </script>
@@ -1339,13 +1339,13 @@ M.util.help_popups.setup(Y);
 WARC/1.0
 WARC-Type: request
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:ab4fc85b-7dc6-4c0f-be82-35158f211a18>
-Content-Length: 656
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:d9afa34b-80c8-4e31-b8e8-9839598272ce>
+Content-Length: 640
 
 Content-Type: application/http;msgtype=request
 GET https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
@@ -1353,8 +1353,8 @@ Connection: close
 WARC/1.0
 WARC-Type: response
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:5911bd50-3abd-4e8e-93a1-750bcc870b06>
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:4dfc9c85-0c3b-4bee-b365-e7c4d3032c5d>
 Content-Length: 34212
 
 HTTP/1.1 404 basic
@@ -1375,7 +1375,7 @@ Content-Length: 33584
 //<![CDATA[
 var M = {}; M.yui = {};
 M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"nHOwCpaDVP","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"qalXnqFfYI","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
 var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
 if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
 YUI_config = {"debug":false,"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?m\/1648826156\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"m\/1648826156\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_poodll-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1648826156\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
@@ -1421,10 +1421,10 @@ document.body.className += ' jsenabled';
             <ul class="navbar-nav d-none d-md-flex">
                 <!-- custom_menu -->
                 <li class="dropdown nav-item">
-    <a class="dropdown-toggle nav-link" id="drop-down-63d76f78808ff63d76f787ff7d4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d76f78808ff63d76f787ff7d4">
+    <a class="dropdown-toggle nav-link" id="drop-down-63d78b604b9b663d78b604aea74" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d78b604b9b663d78b604aea74">
         日本語 ‎(ja)‎
     </a>
-    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d76f78808ff63d76f787ff7d4" aria-labelledby="drop-down-63d76f78808ff63d76f787ff7d4">
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d78b604b9b663d78b604aea74" aria-labelledby="drop-down-63d78b604b9b663d78b604aea74">
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a>
     </div>
@@ -1433,16 +1433,16 @@ document.body.className += ' jsenabled';
                 
             </ul>
             <div class="ml-auto">
-                <div id="searchinput-navbar-63d76f788096b63d76f787ff7d5" class="simplesearchform">
+                <div id="searchinput-navbar-63d78b604ba2463d78b604aea75" class="simplesearchform">
     <div class="collapse" id="searchform-navbar">
         <form autocomplete="off" action="https://hope.fun.ac.jp/search/index.php" method="get" accept-charset="utf-8" class="mform form-inline searchform-navbar">
                 <input type="hidden" name="context" value="1">
             <div class="input-group">
-                <label for="searchinput-63d76f788096b63d76f787ff7d5">
+                <label for="searchinput-63d78b604ba2463d78b604aea75">
                     <span class="sr-only">検索</span>
                 </label>
                     <input type="text"
-                       id="searchinput-63d76f788096b63d76f787ff7d5"
+                       id="searchinput-63d78b604ba2463d78b604aea75"
                        class="form-control withclear"
                        placeholder="検索"
                        aria-label="検索"
@@ -1558,7 +1558,7 @@ document.body.className += ' jsenabled';
     <form method="get" action="https://hope.fun.ac.jp/course/view.php" >
             <input type="hidden" name="id" value="1">
         <button type="submit" class="btn btn-primary"
-            id="single_button63d76f787ff7d8"
+            id="single_button63d78b604aea78"
             title=""
             
             >続ける</button>
@@ -1669,11 +1669,11 @@ require(['jquery'], function($) {
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f787ff7d3', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f787ff7d3').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b604aea73', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b604aea73').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f787ff7d2').submit();
+            $('#single_select_f63d78b604aea72').submit();
         }
     });
 });
@@ -1686,7 +1686,7 @@ require(
 function(
     $
 ) {
-    var uniqid = "63d76f788096b63d76f787ff7d5";
+    var uniqid = "63d78b604ba2463d78b604aea75";
     var container = $('#searchinput-navbar-' + uniqid);
     var opensearch = container.find('[data-action="opensearch"]');
     var input = container.find('[data-region="input"]');
@@ -1711,11 +1711,11 @@ function(
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f787ff7d7', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f787ff7d7').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b604aea77', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b604aea77').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f787ff7d6').submit();
+            $('#single_select_f63d78b604aea76').submit();
         }
     });
 });
@@ -1751,7 +1751,7 @@ M.str = {"moodle":{"lastmodified":"\u6700\u7d42\u66f4\u65b0\u65e5\u6642","name":
 Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
 });
 M.util.help_popups.setup(Y);
- M.util.js_pending('random63d76f787ff7d9'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d76f787ff7d9'); });
+ M.util.js_pending('random63d78b604aea79'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d78b604aea79'); });
 })();
 //]]>
 </script>
@@ -1767,13 +1767,13 @@ M.util.help_popups.setup(Y);
 WARC/1.0
 WARC-Type: request
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:649edfaf-3cf6-407d-945c-c21bde35bd3f>
-Content-Length: 656
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:6d2ee292-2d37-4111-aeae-800c1138e64c>
+Content-Length: 640
 
 Content-Type: application/http;msgtype=request
 GET https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
@@ -1781,8 +1781,8 @@ Connection: close
 WARC/1.0
 WARC-Type: response
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:af51b844-9151-4c7e-af4c-56d89e8343c5>
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:3f9cd20f-3ef7-433b-8063-059f3a9a921d>
 Content-Length: 34212
 
 HTTP/1.1 404 basic
@@ -1803,7 +1803,7 @@ Content-Length: 33584
 //<![CDATA[
 var M = {}; M.yui = {};
 M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"nHOwCpaDVP","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"qalXnqFfYI","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
 var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
 if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
 YUI_config = {"debug":false,"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?m\/1648826156\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"m\/1648826156\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_poodll-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1648826156\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
@@ -1849,10 +1849,10 @@ document.body.className += ' jsenabled';
             <ul class="navbar-nav d-none d-md-flex">
                 <!-- custom_menu -->
                 <li class="dropdown nav-item">
-    <a class="dropdown-toggle nav-link" id="drop-down-63d76f788df4f63d76f788d3fa4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d76f788df4f63d76f788d3fa4">
+    <a class="dropdown-toggle nav-link" id="drop-down-63d78b605ce2963d78b605c4194" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d78b605ce2963d78b605c4194">
         日本語 ‎(ja)‎
     </a>
-    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d76f788df4f63d76f788d3fa4" aria-labelledby="drop-down-63d76f788df4f63d76f788d3fa4">
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d78b605ce2963d78b605c4194" aria-labelledby="drop-down-63d78b605ce2963d78b605c4194">
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a>
     </div>
@@ -1861,16 +1861,16 @@ document.body.className += ' jsenabled';
                 
             </ul>
             <div class="ml-auto">
-                <div id="searchinput-navbar-63d76f788dfbe63d76f788d3fa5" class="simplesearchform">
+                <div id="searchinput-navbar-63d78b605ce9663d78b605c4195" class="simplesearchform">
     <div class="collapse" id="searchform-navbar">
         <form autocomplete="off" action="https://hope.fun.ac.jp/search/index.php" method="get" accept-charset="utf-8" class="mform form-inline searchform-navbar">
                 <input type="hidden" name="context" value="1">
             <div class="input-group">
-                <label for="searchinput-63d76f788dfbe63d76f788d3fa5">
+                <label for="searchinput-63d78b605ce9663d78b605c4195">
                     <span class="sr-only">検索</span>
                 </label>
                     <input type="text"
-                       id="searchinput-63d76f788dfbe63d76f788d3fa5"
+                       id="searchinput-63d78b605ce9663d78b605c4195"
                        class="form-control withclear"
                        placeholder="検索"
                        aria-label="検索"
@@ -1986,7 +1986,7 @@ document.body.className += ' jsenabled';
     <form method="get" action="https://hope.fun.ac.jp/course/view.php" >
             <input type="hidden" name="id" value="1">
         <button type="submit" class="btn btn-primary"
-            id="single_button63d76f788d3fa8"
+            id="single_button63d78b605c4198"
             title=""
             
             >続ける</button>
@@ -2097,11 +2097,11 @@ require(['jquery'], function($) {
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f788d3fa3', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f788d3fa3').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b605c4193', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b605c4193').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f788d3fa2').submit();
+            $('#single_select_f63d78b605c4192').submit();
         }
     });
 });
@@ -2114,7 +2114,7 @@ require(
 function(
     $
 ) {
-    var uniqid = "63d76f788dfbe63d76f788d3fa5";
+    var uniqid = "63d78b605ce9663d78b605c4195";
     var container = $('#searchinput-navbar-' + uniqid);
     var opensearch = container.find('[data-action="opensearch"]');
     var input = container.find('[data-region="input"]');
@@ -2139,11 +2139,11 @@ function(
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f788d3fa7', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f788d3fa7').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b605c4197', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b605c4197').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f788d3fa6').submit();
+            $('#single_select_f63d78b605c4196').submit();
         }
     });
 });
@@ -2179,7 +2179,7 @@ M.str = {"moodle":{"lastmodified":"\u6700\u7d42\u66f4\u65b0\u65e5\u6642","name":
 Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
 });
 M.util.help_popups.setup(Y);
- M.util.js_pending('random63d76f788d3fa9'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d76f788d3fa9'); });
+ M.util.js_pending('random63d78b605c4199'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d78b605c4199'); });
 })();
 //]]>
 </script>
@@ -2195,13 +2195,13 @@ M.util.help_popups.setup(Y);
 WARC/1.0
 WARC-Type: request
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:ce793d63-8fb0-4e68-804b-98f5d55a28b3>
-Content-Length: 656
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:17b7708f-7915-466b-b283-0afeb7dec8d0>
+Content-Length: 640
 
 Content-Type: application/http;msgtype=request
 GET https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
@@ -2209,8 +2209,8 @@ Connection: close
 WARC/1.0
 WARC-Type: response
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:b29dd1f3-012c-40e9-8eef-75811d1664c6>
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:f62061ad-22c4-4b40-be5b-1897b2e58f3a>
 Content-Length: 34212
 
 HTTP/1.1 404 basic
@@ -2231,7 +2231,7 @@ Content-Length: 33584
 //<![CDATA[
 var M = {}; M.yui = {};
 M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"nHOwCpaDVP","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"qalXnqFfYI","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
 var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
 if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
 YUI_config = {"debug":false,"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?m\/1648826156\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"m\/1648826156\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_poodll-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1648826156\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
@@ -2277,10 +2277,10 @@ document.body.className += ' jsenabled';
             <ul class="navbar-nav d-none d-md-flex">
                 <!-- custom_menu -->
                 <li class="dropdown nav-item">
-    <a class="dropdown-toggle nav-link" id="drop-down-63d76f789c35863d76f789ba344" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d76f789c35863d76f789ba344">
+    <a class="dropdown-toggle nav-link" id="drop-down-63d78b60760ba63d78b60756784" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d78b60760ba63d78b60756784">
         日本語 ‎(ja)‎
     </a>
-    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d76f789c35863d76f789ba344" aria-labelledby="drop-down-63d76f789c35863d76f789ba344">
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d78b60760ba63d78b60756784" aria-labelledby="drop-down-63d78b60760ba63d78b60756784">
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a>
     </div>
@@ -2289,16 +2289,16 @@ document.body.className += ' jsenabled';
                 
             </ul>
             <div class="ml-auto">
-                <div id="searchinput-navbar-63d76f789c3c263d76f789ba345" class="simplesearchform">
+                <div id="searchinput-navbar-63d78b607612763d78b60756785" class="simplesearchform">
     <div class="collapse" id="searchform-navbar">
         <form autocomplete="off" action="https://hope.fun.ac.jp/search/index.php" method="get" accept-charset="utf-8" class="mform form-inline searchform-navbar">
                 <input type="hidden" name="context" value="1">
             <div class="input-group">
-                <label for="searchinput-63d76f789c3c263d76f789ba345">
+                <label for="searchinput-63d78b607612763d78b60756785">
                     <span class="sr-only">検索</span>
                 </label>
                     <input type="text"
-                       id="searchinput-63d76f789c3c263d76f789ba345"
+                       id="searchinput-63d78b607612763d78b60756785"
                        class="form-control withclear"
                        placeholder="検索"
                        aria-label="検索"
@@ -2414,7 +2414,7 @@ document.body.className += ' jsenabled';
     <form method="get" action="https://hope.fun.ac.jp/course/view.php" >
             <input type="hidden" name="id" value="1">
         <button type="submit" class="btn btn-primary"
-            id="single_button63d76f789ba348"
+            id="single_button63d78b60756788"
             title=""
             
             >続ける</button>
@@ -2525,11 +2525,11 @@ require(['jquery'], function($) {
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f789ba343', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f789ba343').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b60756783', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b60756783').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f789ba342').submit();
+            $('#single_select_f63d78b60756782').submit();
         }
     });
 });
@@ -2542,7 +2542,7 @@ require(
 function(
     $
 ) {
-    var uniqid = "63d76f789c3c263d76f789ba345";
+    var uniqid = "63d78b607612763d78b60756785";
     var container = $('#searchinput-navbar-' + uniqid);
     var opensearch = container.find('[data-action="opensearch"]');
     var input = container.find('[data-region="input"]');
@@ -2567,11 +2567,11 @@ function(
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f789ba347', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f789ba347').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b60756787', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b60756787').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f789ba346').submit();
+            $('#single_select_f63d78b60756786').submit();
         }
     });
 });
@@ -2607,7 +2607,7 @@ M.str = {"moodle":{"lastmodified":"\u6700\u7d42\u66f4\u65b0\u65e5\u6642","name":
 Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
 });
 M.util.help_popups.setup(Y);
- M.util.js_pending('random63d76f789ba349'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d76f789ba349'); });
+ M.util.js_pending('random63d78b60756789'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d78b60756789'); });
 })();
 //]]>
 </script>
@@ -2623,13 +2623,13 @@ M.util.help_popups.setup(Y);
 WARC/1.0
 WARC-Type: request
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:9cb27c2c-fbe5-4c94-aca6-4f570b9d8715>
-Content-Length: 656
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:7d6da656-22b3-4c6d-9325-ed498fe03c10>
+Content-Length: 640
 
 Content-Type: application/http;msgtype=request
 GET https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
@@ -2637,8 +2637,8 @@ Connection: close
 WARC/1.0
 WARC-Type: response
 WARC-Target-URI: https://hope.fun.ac.jp/pluginfile.php/1/core_admin/logo/0x150/1670954059/logo%202015%20v3.png,https://hope.fun.ac.jp/theme/image.php/boost/forum/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/page/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/url/1670954059/icon,https://hope.fun.ac.jp/theme/image.php/boost/core/1670954059/moodlelogo_grayhat
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:97a60d59-b5b8-461a-b7b1-dd1797f9b8be>
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:a61a5ad2-f95f-4f76-99e7-19a41d46a6d3>
 Content-Length: 34212
 
 HTTP/1.1 404 basic
@@ -2659,7 +2659,7 @@ Content-Length: 33584
 //<![CDATA[
 var M = {}; M.yui = {};
 M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"nHOwCpaDVP","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+M.cfg = {"wwwroot":"https:\/\/hope.fun.ac.jp","sesskey":"qalXnqFfYI","sessiontimeout":"14400","sessiontimeoutwarning":1200,"themerev":"1670954059","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1648826156","admin":"admin","svgicons":true,"usertimezone":"\u30a2\u30b8\u30a2\/\u6771\u4eac","contextid":1,"langrev":1674934805,"templaterev":"1648826156"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
 var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
 if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
 YUI_config = {"debug":false,"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?m\/1648826156\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"m\/1648826156\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_poodll-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/hope.fun.ac.jp\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/hope.fun.ac.jp\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1648826156\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/hope.fun.ac.jp\/lib\/javascript.php\/1648826156\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
@@ -2705,10 +2705,10 @@ document.body.className += ' jsenabled';
             <ul class="navbar-nav d-none d-md-flex">
                 <!-- custom_menu -->
                 <li class="dropdown nav-item">
-    <a class="dropdown-toggle nav-link" id="drop-down-63d76f78a913563d76f78a87114" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d76f78a913563d76f78a87114">
+    <a class="dropdown-toggle nav-link" id="drop-down-63d78b6084a0a63d78b6083fb84" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="言語設定" aria-controls="drop-down-menu-63d78b6084a0a63d78b6083fb84">
         日本語 ‎(ja)‎
     </a>
-    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d76f78a913563d76f78a87114" aria-labelledby="drop-down-63d76f78a913563d76f78a87114">
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-63d78b6084a0a63d78b6083fb84" aria-labelledby="drop-down-63d78b6084a0a63d78b6083fb84">
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
                 <a class="dropdown-item" role="menuitem" href="https://hope.fun.ac.jp/?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a>
     </div>
@@ -2717,16 +2717,16 @@ document.body.className += ' jsenabled';
                 
             </ul>
             <div class="ml-auto">
-                <div id="searchinput-navbar-63d76f78a91a063d76f78a87115" class="simplesearchform">
+                <div id="searchinput-navbar-63d78b6084a7763d78b6083fb85" class="simplesearchform">
     <div class="collapse" id="searchform-navbar">
         <form autocomplete="off" action="https://hope.fun.ac.jp/search/index.php" method="get" accept-charset="utf-8" class="mform form-inline searchform-navbar">
                 <input type="hidden" name="context" value="1">
             <div class="input-group">
-                <label for="searchinput-63d76f78a91a063d76f78a87115">
+                <label for="searchinput-63d78b6084a7763d78b6083fb85">
                     <span class="sr-only">検索</span>
                 </label>
                     <input type="text"
-                       id="searchinput-63d76f78a91a063d76f78a87115"
+                       id="searchinput-63d78b6084a7763d78b6083fb85"
                        class="form-control withclear"
                        placeholder="検索"
                        aria-label="検索"
@@ -2842,7 +2842,7 @@ document.body.className += ' jsenabled';
     <form method="get" action="https://hope.fun.ac.jp/course/view.php" >
             <input type="hidden" name="id" value="1">
         <button type="submit" class="btn btn-primary"
-            id="single_button63d76f78a87118"
+            id="single_button63d78b6083fb88"
             title=""
             
             >続ける</button>
@@ -2953,11 +2953,11 @@ require(['jquery'], function($) {
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f78a87113', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f78a87113').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b6083fb83', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b6083fb83').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f78a87112').submit();
+            $('#single_select_f63d78b6083fb82').submit();
         }
     });
 });
@@ -2970,7 +2970,7 @@ require(
 function(
     $
 ) {
-    var uniqid = "63d76f78a91a063d76f78a87115";
+    var uniqid = "63d78b6084a7763d78b6083fb85";
     var container = $('#searchinput-navbar-' + uniqid);
     var opensearch = container.find('[data-action="opensearch"]');
     var input = container.find('[data-region="input"]');
@@ -2995,11 +2995,11 @@ function(
 ;
 
 require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select63d76f78a87117', [CustomEvents.events.accessibleChange]);
-    $('#single_select63d76f78a87117').on(CustomEvents.events.accessibleChange, function() {
+    CustomEvents.define('#single_select63d78b6083fb87', [CustomEvents.events.accessibleChange]);
+    $('#single_select63d78b6083fb87').on(CustomEvents.events.accessibleChange, function() {
         var ignore = $(this).find(':selected').attr('data-ignore');
         if (typeof ignore === typeof undefined) {
-            $('#single_select_f63d76f78a87116').submit();
+            $('#single_select_f63d78b6083fb86').submit();
         }
     });
 });
@@ -3035,7 +3035,7 @@ M.str = {"moodle":{"lastmodified":"\u6700\u7d42\u66f4\u65b0\u65e5\u6642","name":
 Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
 });
 M.util.help_popups.setup(Y);
- M.util.js_pending('random63d76f78a87119'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d76f78a87119'); });
+ M.util.js_pending('random63d78b6083fb89'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63d78b6083fb89'); });
 })();
 //]]>
 </script>
@@ -3051,13 +3051,13 @@ M.util.help_popups.setup(Y);
 WARC/1.0
 WARC-Type: request
 WARC-Target-URI: https://hope.fun.ac.jp/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css,https://hope.fun.ac.jp/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css,https://hope.fun.ac.jp/theme/styles.php/boost/1670954059_1648826476/all,https://hope.fun.ac.jp/weblib/syntaxhighlighter/shCoreEclipse.css
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:efd26ef6-f9a7-430e-a6db-e9c63c677af6>
-Content-Length: 300
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:c870abc5-a784-4c38-9ed8-ee696f604eb5>
+Content-Length: 284
 
 Content-Type: application/http;msgtype=request
 GET https://hope.fun.ac.jp/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
@@ -3065,8 +3065,8 @@ Connection: close
 WARC/1.0
 WARC-Type: response
 WARC-Target-URI: https://hope.fun.ac.jp/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css,https://hope.fun.ac.jp/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css,https://hope.fun.ac.jp/theme/styles.php/boost/1670954059_1648826476/all,https://hope.fun.ac.jp/weblib/syntaxhighlighter/shCoreEclipse.css
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:b0c74c9c-49c1-45ab-9488-e3351d26a114>
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:19f92ced-be32-4cd4-9c3d-af8fff0e8006>
 Content-Length: 3747
 
 HTTP/1.1 200 basic
@@ -3120,13 +3120,13 @@ http://yuilibrary.com/license/
 WARC/1.0
 WARC-Type: request
 WARC-Target-URI: https://hope.fun.ac.jp/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css,https://hope.fun.ac.jp/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css,https://hope.fun.ac.jp/theme/styles.php/boost/1670954059_1648826476/all,https://hope.fun.ac.jp/weblib/syntaxhighlighter/shCoreEclipse.css
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:084dea00-0bc4-4ae8-b918-ab2da783951d>
-Content-Length: 296
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:d1addd68-b1f2-44b3-9410-06cb3860e57d>
+Content-Length: 280
 
 Content-Type: application/http;msgtype=request
 GET https://hope.fun.ac.jp/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
@@ -3134,8 +3134,8 @@ Connection: close
 WARC/1.0
 WARC-Type: response
 WARC-Target-URI: https://hope.fun.ac.jp/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css,https://hope.fun.ac.jp/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css,https://hope.fun.ac.jp/theme/styles.php/boost/1670954059_1648826476/all,https://hope.fun.ac.jp/weblib/syntaxhighlighter/shCoreEclipse.css
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:1896eee8-b131-4ee6-be00-b6e80aa1324f>
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:57f09765-420d-4380-81bf-fd8a1ddd48c7>
 Content-Length: 5533
 
 HTTP/1.1 200 basic
@@ -3157,13 +3157,13 @@ http://yuilibrary.com/license/
 WARC/1.0
 WARC-Type: request
 WARC-Target-URI: https://hope.fun.ac.jp/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css,https://hope.fun.ac.jp/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css,https://hope.fun.ac.jp/theme/styles.php/boost/1670954059_1648826476/all,https://hope.fun.ac.jp/weblib/syntaxhighlighter/shCoreEclipse.css
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:a1a6c8e9-4852-4f73-9dc9-415e200f3b65>
-Content-Length: 290
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:7d11fc50-05b8-4d53-a4a5-bd0589e3ff3e>
+Content-Length: 274
 
 Content-Type: application/http;msgtype=request
 GET https://hope.fun.ac.jp/theme/styles.php/boost/1670954059_1648826476/all HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
@@ -3171,8 +3171,8 @@ Connection: close
 WARC/1.0
 WARC-Type: response
 WARC-Target-URI: https://hope.fun.ac.jp/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css,https://hope.fun.ac.jp/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css,https://hope.fun.ac.jp/theme/styles.php/boost/1670954059_1648826476/all,https://hope.fun.ac.jp/weblib/syntaxhighlighter/shCoreEclipse.css
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:82ca3072-1ca6-444e-b94e-5b94986f9e17>
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:d039d4df-a06a-4a84-bf0a-1578e8fb860c>
 Content-Length: 930082
 
 HTTP/1.1 200 basic
@@ -3278,13 +3278,13 @@ Content-Length: 928566
 WARC/1.0
 WARC-Type: request
 WARC-Target-URI: https://hope.fun.ac.jp/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css,https://hope.fun.ac.jp/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css,https://hope.fun.ac.jp/theme/styles.php/boost/1670954059_1648826476/all,https://hope.fun.ac.jp/weblib/syntaxhighlighter/shCoreEclipse.css
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:d7790593-7092-435a-b243-a412b2872288>
-Content-Length: 284
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:1cc8934b-2e38-47e0-95a6-dc4709b7c3d7>
+Content-Length: 268
 
 Content-Type: application/http;msgtype=request
 GET https://hope.fun.ac.jp/weblib/syntaxhighlighter/shCoreEclipse.css HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 
 Connection: close 
 
 
@@ -3292,8 +3292,8 @@ Connection: close
 WARC/1.0
 WARC-Type: response
 WARC-Target-URI: https://hope.fun.ac.jp/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css,https://hope.fun.ac.jp/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css,https://hope.fun.ac.jp/theme/styles.php/boost/1670954059_1648826476/all,https://hope.fun.ac.jp/weblib/syntaxhighlighter/shCoreEclipse.css
-WARC-Date: 2023-01-30T07:19:20Z
-WARC-Record-ID: <urn:uuid:98a23e54-0cf7-45ed-90b7-426200b0994f>
+WARC-Date: 2023-01-30T09:18:23Z
+WARC-Record-ID: <urn:uuid:902d0576-9ca3-414b-a63c-2f5583fe04e5>
 Content-Length: 8762
 
 HTTP/1.1 200 basic
