@@ -8,6 +8,7 @@ if [[ ! -d $WATCH_TARGET_DIR ]]; then
     echo "[error] Not Found target directory ${WATCH_TARGET_DIR}"
     exit
 fi
+
 echo watch start
 inotifywait -m $WATCH_TARGET_DIR -mq $dir_name -e create | while read event; do
     ARR=(${event})

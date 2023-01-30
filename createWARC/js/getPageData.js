@@ -16,12 +16,12 @@ function download_WARC(data){
     console.log(data);
     let now = new Date();
 
+    console.log(now);
     const blob = new Blob([data], {type: 'text/plain'});
-
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     document.body.appendChild(a);
-    a.download = `${document.URL}.warc`;
+    a.download = `${document.URL}/${now.getFullYear()}/${now.getMonth()+1}/${now.getDate()}/${now.getHours()}/${now.getMinutes()}/${now.getSeconds()}.warc`;
     a.href = url;
     a.click();
     a.remove();
