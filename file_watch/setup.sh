@@ -57,7 +57,9 @@ elif [ "$OS" = 'Mac' ]; then
 	./macTask.sh&
 fi
 
+docker build ./ipwb-master -t beru/ipwb_local
+
 docker run -d --name ipwb_local \
 	-v $(pwd)/ipwb-master/warc:/data/warc	-v $(pwd)/ipwb-master/cdxj:/data/cdxj \
 	-p 4001:4001   -p 8080:8080   -p 5001:5001 -p 2016:2016 \
-	beruspos/ipwb_local:v2
+	beru/ipwb_local

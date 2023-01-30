@@ -1,5 +1,8 @@
 #!/bin/bash
 source ./config
+
+docker start ipwb_local
+
 # ディレクトリの存在チェック
 if [[ ! -d $WATCH_TARGET_DIR ]]; then
     echo "[error] Not Found target directory ${WATCH_TARGET_DIR}"
