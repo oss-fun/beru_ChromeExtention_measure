@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "sudoはパッケージインストールのapt, brewコマンドに利用します"
-
+echo "sudoはパッケージインストールのapt, brewコマンド, コンテナ作成のdockerコマンドに利用します"
+echo "コンテナイメージのビルドが終わるまでしばらく時間がかかりますが、この画面を閉じないでください"
 OS=''
 
 #config 存在確認
@@ -57,9 +57,9 @@ elif [ "$OS" = 'Mac' ]; then
 	./macTask.sh&
 fi
 
-docker build ./ipwb-master -t beru/ipwb_local
+sudo docker build -t beru/ipwb_local ./ipwb-master 
 
-docker run -d --name ipwb_local \
+sudo docker run -d --name ipwb_local \
 	-v $(pwd)/ipwb-master/warc:/data/warc	-v $(pwd)/ipwb-master/cdxj:/data/cdxj \
 	-p 4001:4001   -p 8080:8080   -p 5001:5001 -p 2016:2016 \
 	beru/ipwb_local

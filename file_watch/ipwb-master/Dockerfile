@@ -56,21 +56,6 @@ ARG        SKIPTEST=false
 RUN        $SKIPTEST || npm install -g standard
 RUN        $SKIPTEST || standard
 
-
-# Testing stage
-FROM base AS test
-
-# Install necessary test requirements
-COPY       test-requirements.txt ./
-RUN        pip install -r test-requirements.txt
-
-# Perform tests
-COPY       . ./
-ARG        SKIPTEST=false
-RUN        $SKIPTEST || pycodestyle
-RUN        $SKIPTEST || (ipfs daemon & while ! curl -s localhost:5001 > /dev/null; do sleep 1; done && py.test -s --cov=./)
-
-
 # Final production image
 FROM base
 

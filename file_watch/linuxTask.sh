@@ -1,7 +1,7 @@
 #!/bin/bash
 source ./config
 
-docker start ipwb_local
+sudo docker start ipwb_local
 
 # ディレクトリの存在チェック
 if [[ ! -d $WATCH_TARGET_DIR ]]; then
@@ -19,6 +19,6 @@ inotifywait -m $WATCH_TARGET_DIR -mq $dir_name -e create | while read event; do
         rm ${WATCH_TARGET_DIR}/${ARR[2]}
         echo ${WATCH_TARGET_DIR}/
         echo "WARC FILE COPY"
-        docker exec -it ipwb_local ipwb index /data/warc/$filename >> ipwb_master/cdxj
+        sudo docker exec -it ipwb_local ipwb index /data/warc/$filename >> ipwb_master/cdxj
     fi
 done 

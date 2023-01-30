@@ -1,7 +1,7 @@
 #!/bin/bash
 source ./config
 
-docker start ipwb_local
+sudo docker start ipwb_local
 
 #---------------------------
 # ディレクトリの存在チェック
@@ -19,6 +19,6 @@ fswatch -0 --event Created $WATCH_TARGET_DIR | while read -d '' event; do
     cp $event $(pwd)/ipwb-master/warc
     rm $event
     echo "WARC FILE COPY"
-    docker exec -i ipwb_local ipwb index /data/warc/$filename >> ipwb-master/cdxj/hope.cdxj
+    sudo docker exec -i ipwb_local ipwb index /data/warc/$filename >> ipwb-master/cdxj/hope.cdxj
   fi
 done
