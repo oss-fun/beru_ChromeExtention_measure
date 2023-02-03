@@ -57,7 +57,27 @@ elif [ "$OS" = 'Mac' ]; then
 	./macTask.sh&
 fi
 
-sudo docker build -t beru/ipwb_local ./ipwb-master 
+get_arch() {
+  local arch
+  arch=$(uname -m | tr '[:upper:]' '[:lower:]')
+  case ${arch} in
+  x86_64)
+    arch='amd64'
+    ;;
+  esac
+
+  echo "${arch}"
+}
+
+get_platform() {
+  plat=$(uname | tr '[:upper:]' '[:lower:]')
+
+  echo "${plat}"
+}
+
+arch="$(get_arch)"
+platform="$(get_platform)"
+sudo docker build -t beru/ipwb_local ./ipwb-master --build-arg ARCH=$arch --build-arg PLATFORM=$platform
 
 sudo docker run -d --name ipwb_local \
 	-v $(pwd)/ipwb-master/warc:/data/warc	-v $(pwd)/ipwb-master/cdxj:/data/cdxj \
