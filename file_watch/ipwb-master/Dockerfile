@@ -1,5 +1,5 @@
-ARG        PYTHON_TAG=3
-FROM       python:${PYTHON_TAG} AS base
+ARG PYTHON_TAG=3
+FROM python:${PYTHON_TAG} AS base
 
 # Add some metadata
 LABEL      app.name="InterPlanetary Wayback (IPWB)" \
@@ -10,11 +10,11 @@ LABEL      app.name="InterPlanetary Wayback (IPWB)" \
   app.authors="Mat Kelly <@machawk1> and Sawood Alam <@ibnesayeed>"
 
 # Add a custom entrypoint script
-COPY       entrypoint.sh /usr/local/bin/
-RUN        chmod a+x /usr/local/bin/entrypoint.sh
+COPY entrypoint.sh /usr/local/bin/
+RUN chmod a+x /usr/local/bin/entrypoint.sh
 
 # Enable unbuffered STDOUT logging
-ENV        PYTHONUNBUFFERED=1
+ENV PYTHONUNBUFFERED=1
 
 # Create folders for WARC, CDXJ and IPFS stores
 RUN        mkdir -p /data/ipfs \
@@ -36,6 +36,7 @@ RUN        cd /tmp \
 
 COPY        swarm.key /root/.ipfs/
 
+COPY swarm.key /root/.ipfs/
 
 # Make necessary changes to prepare the environment for IPWB
 RUN        apt update && apt install -y locales \
@@ -44,25 +45,24 @@ RUN        apt update && apt install -y locales \
   && locale-gen
 
 # Install basic requirements
-WORKDIR    /ipwb
-COPY       requirements.txt ./
-RUN        pip install -r requirements.txt
-
+WORKDIR /ipwb
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
 
 # Standard JS lint
-FROM       node
-WORKDIR    /ipwb
-COPY       . ./
-ARG        SKIPTEST=false
-RUN        $SKIPTEST || npm install -g standard
-RUN        $SKIPTEST || standard
+FROM node
+WORKDIR /ipwb
+COPY . ./
+ARG SKIPTEST=false
+RUN $SKIPTEST || npm install -g standard
+RUN $SKIPTEST || standard
 
 # Final production image
 FROM base
 
 # Install IPWB from the source code
-COPY       . ./
-RUN        python setup.py install
+COPY . ./
+RUN python setup.py install
 
 # Run ipfs daemon in background
 # Wait for the daemon to be ready
