@@ -2,6 +2,7 @@
 echo "sudoはパッケージインストールのapt, brewコマンド, コンテナ作成のdockerコマンドに利用します"
 echo "コンテナイメージのビルドが終わるまでしばらく時間がかかりますが、この画面を閉じないでください"
 OS=''
+arch=''
 
 #config 存在確認
 if [ ! -f ./config ]; then
@@ -42,8 +43,28 @@ system_check(){
 	fi
 }
 
+get_arch() {
+  arch=$(uname -m | tr '[:upper:]' '[:lower:]')
+  case $arch in
+  x86_64)
+    arch='amd64'
+    ;;
+  i686)
+    arch='amd32'
+    ;;
+  aarch64)
+    arch='arm64'
+    ;;
+  aarch32)
+    arch='arm32'
+    ;;
+  esac
+    echo "${arch}"
+}
+
 generate_config
 system_check
+get_arch
 if [ -z "${OS}" ];then
 	echo error: OS
 	exit 1
@@ -57,7 +78,7 @@ elif [ "$OS" = 'Mac' ]; then
 	./macTask.sh&
 fi
 
-sudo docker build -t beru/ipwb_local ./ipwb-master 
+sudo docker build -t beru/ipwb_local ./ipwb-master --build-arg ARCH=$arch
 
 sudo docker run -d --name ipwb_local \
 	-v $(pwd)/ipwb-master/warc:/data/warc	-v $(pwd)/ipwb-master/cdxj:/data/cdxj \

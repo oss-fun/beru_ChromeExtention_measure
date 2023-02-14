@@ -3,11 +3,11 @@ FROM       python:${PYTHON_TAG} AS base
 
 # Add some metadata
 LABEL      app.name="InterPlanetary Wayback (IPWB)" \
-           app.description="A distributed and persistent archive replay system using IPFS" \
-           app.license="MIT License" \
-           app.license.url="https://github.com/oduwsdl/ipwb/blob/master/LICENSE" \
-           app.repo.url="https://github.com/oduwsdl/ipwb" \
-           app.authors="Mat Kelly <@machawk1> and Sawood Alam <@ibnesayeed>"
+  app.description="A distributed and persistent archive replay system using IPFS" \
+  app.license="MIT License" \
+  app.license.url="https://github.com/oduwsdl/ipwb/blob/master/LICENSE" \
+  app.repo.url="https://github.com/oduwsdl/ipwb" \
+  app.authors="Mat Kelly <@machawk1> and Sawood Alam <@ibnesayeed>"
 
 # Add a custom entrypoint script
 COPY       entrypoint.sh /usr/local/bin/
@@ -18,29 +18,30 @@ ENV        PYTHONUNBUFFERED=1
 
 # Create folders for WARC, CDXJ and IPFS stores
 RUN        mkdir -p /data/ipfs \
-        && mkdir -p /data/warc \
-        && mkdir -p /data/cdxj \
+  && mkdir -p /data/warc \
+  && mkdir -p /data/cdxj 
 
 # Download and install IPFS
 ENV        IPFS_PATH=/data/ipfs
 ARG        IPFS_VERSION=v0.18.0
+ARG        ARCH=amd64
 RUN        cd /tmp \
-            && wget -q https://dist.ipfs.io/kubo/${IPFS_VERSION}/kubo_${IPFS_VERSION}_linux-amd64.tar.gz \
-            && tar xvfz kubo*.tar.gz \
-            && mv kubo/ipfs /usr/local/bin/ipfs \
-            && rm -rf kubo* \
-            && ipfs init \
-            && ipfs bootstrap rm --all \
-            && ipfs bootstrap add /ip4/153.120.91.229/tcp/4001/p2p/12D3KooWRdUnAXeCoW9FUnchhQsiNfvffwMYqS2nGdraUfvuqzoy
-            
+  && wget -q https://dist.ipfs.io/kubo/${IPFS_VERSION}/kubo_${IPFS_VERSION}_linux-${ARCH}.tar.gz \
+  && tar xvfz kubo*.tar.gz \
+  && mv kubo/ipfs /usr/local/bin/ipfs \
+  && rm -rf kubo* \
+  && ipfs init \
+  && ipfs bootstrap rm --all \
+  && ipfs bootstrap add /ip4/153.120.91.229/tcp/4001/p2p/12D3KooWRdUnAXeCoW9FUnchhQsiNfvffwMYqS2nGdraUfvuqzoy
+
 COPY        swarm.key /root/.ipfs/
 
 
 # Make necessary changes to prepare the environment for IPWB
 RUN        apt update && apt install -y locales \
-            && rm -rf /var/lib/apt/lists/* \
-            && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
-            && locale-gen
+  && rm -rf /var/lib/apt/lists/* \
+  && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
+  && locale-gen
 
 # Install basic requirements
 WORKDIR    /ipwb
