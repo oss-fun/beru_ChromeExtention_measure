@@ -81,6 +81,6 @@ fi
 sudo docker build -t beru/ipwb_local ./ipwb-master --build-arg ARCH=$arch
 
 sudo docker run -d --name ipwb_local \
-  -v $(pwd)/ipwb-master/warc:/data/warc -v $(pwd)/ipwb-master/cdxj:/data/cdxj \
+  -v $(pwd)/warc:/data/warc -v $(pwd)/cdxj:/data/cdxj \
   -p 4001:4001 -p 8080:8080 -p 5001:5001 -p 2016:2016 \
   beru/ipwb_local
