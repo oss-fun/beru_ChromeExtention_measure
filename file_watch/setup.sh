@@ -10,7 +10,6 @@ if [ ! -f ./config ]; then
   touch config
 fi
 
-#
 generate_config() {
   echo IPWB_DATA_DIR=$(pwd)/ipwb-master/warc >./config
 
