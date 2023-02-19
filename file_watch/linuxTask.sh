@@ -18,6 +18,6 @@ inotifywait -m $WATCH_TARGET_DIR -mq $dir_name -e create | while read event; do
         rm $WATCH_TARGET_DIR/${ARR[2]}
         echo WATCH : ${WATCH_TARGET_DIR}
         echo "WARC FILE COPY"
-        sudo docker exec -i ipwb_local ipwb index /data/warc/${ARR[2]} >> ./ipwb-master/cdxj/Hope.cdxj
+        sudo docker exec -i ipwb_local ipwb index /data/warc/${ARR[2]} >> ./ipwb-master/cdxj/Tenki.cdxj
     fi
 done 
