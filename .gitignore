@@ -1,6 +1,5 @@
-data/
 staging/
 contents/
 file_watch/config
-file_watch/ipwb-master/cdxj
-file_watch/ipwb-master/warc
+data/cdxj
+data/warc
