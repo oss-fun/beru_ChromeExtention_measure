@@ -75,7 +75,7 @@ elif [ "${OS}" = 'Linux' ]; then
   ./linuxTask.sh &
 elif [ "$OS" = 'Mac' ]; then
   brew install fswatch
-  #./macTask.sh&
+  ./macTask.sh&
 fi
 
 sudo docker build -t beru/ipwb_local ./ipwb-master --build-arg ARCH=$arch
