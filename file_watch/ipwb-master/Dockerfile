@@ -22,7 +22,6 @@ RUN        mkdir -p /data/ipfs \
   && mkdir -p /data/cdxj 
 
 # Download and install IPFS
-ENV        IPFS_PATH=/data/ipfs
 ARG        IPFS_VERSION=v0.18.0
 ARG        ARCH=amd64
 RUN        cd /tmp \
