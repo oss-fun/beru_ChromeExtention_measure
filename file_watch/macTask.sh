@@ -16,9 +16,9 @@ fswatch -0 --event Created $WATCH_TARGET_DIR | while read -d '' event; do
   if [[ $event =~ .warc$ ]];
   then
     filename=${event##*/}
-    cp $event $(pwd)/ipwb-master/warc
+    cp $event $(pwd)/warc
     rm $event
     echo "WARC FILE COPY"
-    sudo docker exec -i ipwb_local ipwb index /data/warc/$filename >> data/cdxj/Tenki.cdxj
+    sudo docker exec -i ipwb_local ipwb index /data/warc/$filename >> ./cdxj/Tenki.cdxj
   fi
 done

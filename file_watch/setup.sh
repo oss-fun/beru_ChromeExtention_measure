@@ -11,7 +11,7 @@ if [ ! -f ./config ]; then
 fi
 
 generate_config() {
-  echo IPWB_DATA_DIR=$(pwd)/ipwb-master/warc >./config
+  echo IPWB_DATA_DIR=$(pwd)/warc >./config
 
   TARGET_DIR=''
   if [ -d "$HOME/Downloads" ]; then
